@@ -1,40 +1,40 @@
- reading a text file
-#include iostream
-#include fstream
-#include string
+// reading a text file
+#include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
-int main (int argc, char argv[]) {
+int main (int argc, char* argv[]) {
   char letra;
   ifstream myfile (argv[1]);
   if (myfile.is_open())
   {
-    int cont=0;
+    //int cont=0;
 
 
-    TODO Leer el tamaño de la matriz e iniciarlizarla
+    //TODO: Leer el tamaño de la matriz e iniciarlizarla
     
     while ( !myfile.eof() )
     {
-      myfile  letra;
-      cout letra;
+      /*myfile >> letra;
+      cout<<" "<<letra;
       if(cont == 8){
-         coutendl;
+         cout<<endl;
          cont=0;
       }else
-          cont++;
+          cont++;*/
 
-	TODOLlenar la matriz
+	//TODO:Llenar la matriz
       
     }
 
     myfile.close();
   }
 
-  else cout  El archivo no existe; 
+  else cout << "El archivo no existe"; 
 
-  TODO llamar función SalirLaberinto
-  TODO Liberar Memoria
+  //TODO: llamar función SalirLaberinto
+  //TODO: Liberar Memoria
 
   return 0;
 }
