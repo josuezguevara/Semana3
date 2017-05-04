@@ -57,11 +57,11 @@ int main (int argc, char* argv[]) {
 
   else cout << "El archivo no existe"; 
   //imprimir laberinto
-  printMatrix(size,matrix);
+  //printMatrix(size,matrix);
 
   //TODO: llamar función SalirLaberinto
-
-
+  salirLaberinto(matrix,size,1,0);
+  
 
   //TODO: Liberar Memoria
   freeMatriz(size,matrix);
@@ -71,6 +71,9 @@ int main (int argc, char* argv[]) {
 
 //salir del Laberinto
 void salirLaberinto(char** matrix, int size, int x, int y){
+ printMatrix(size,matrix);
+ cin.get();
+
  if (y==size-1){
   cout<<"Ha encontrado la salida del Laberinto!"<<endl;
   return;
